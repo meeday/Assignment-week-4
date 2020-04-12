@@ -1,0 +1,26 @@
+body {
+    padding-top: 40px;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.highScore {
+    left: 40%;
+    text-align: left;
+    float: left;
+    font-size: 18px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.timer {
+    right: 40%;
+    text-align: right;
+    float: right;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}

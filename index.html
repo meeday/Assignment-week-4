@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Code Quiz Challenge</title>
+
+    <!--Link to Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
+
+    <!--Link for Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--Link to jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+
+<body>
+
+    <!-- DEFINES THE QUIZ CONTAINER -->
+    <header>
+        <div class="highScore">View Highscores</div>
+        <div class="timer pull-right">Time: 75</div>
+    </header>
+    <div class="container text-center bg-info" id="quizContainer">
+
+        <!-- DEFINES FIRST ROW -->
+
+        <div class="row">
+            <!-- FIRST COLUMN CONTAINS A CARD DISPLAYING GAME INFO -->
+            <div class="container">
+                <!-- CARD DISPLAY WITH START BUTTON -->
+                <div class="card">
+
+                    <div class="card-body text-center">
+                        <h1 class="card-title">Code Quiz Challenge</h1>
+                        <hr id="win" />
+                        <p class="card-text">Try to answer the following code-related questions within the time limit.
+                            Keep in
+                            mind that incorrect answers will penalize your time by ten seconds!
+                        </p>
+                        <hr id="win" />
+                    </div>
+                    <div>
+                        <div>
+                            <button type="button" class="btn btn-dark" id="start">Start</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECOND COLUMN IN THE ROW -->
+            <div class="container text-center bg-info" id="removePadding">
+
+                <br>
+                <!-- DISPLAYS THE CURRENT QUESTION  -->
+                <div class="question-display bg-light"></div>
+                <br>
+                <!-- DISPLAYS THE BUTTON ARRAY  -->
+                <p id="button-display"></p>
+
+                <!-- DISPLAYS WHETHER USER IS RIGHT OR WRONG -->
+                <div class="areYouRight">
+                    <div class="timeout"></div>
+                </div>
+
+                <!-- DISPLAYS THE LAST PAGE WITH STATS AND GETS INITIALS FOR HIGH SCORE  -->
+                <div class="final-page" style="display: none">
+                    <div id="message"></div>
+                    <div id="score"></div>
+                    <div id="correct"></div>
+                    <div id="incorrect"></div>
+                    <br>
+                    <div id="initials">
+                        <form>
+                            Enter Name:<input type="text" placeholder="Enter initials here" id="userInput"
+                                name="initials">
+                            <input type="button" id="submitInitials" style="color:black;" value="Submit">
+                        </form>
+                    </div>
+
+
+                </div>
+                <div class="highScorePage" style="display:none">
+                    <h1 id="hsTitle">Highscores</h1>
+                    <hr id="win" />
+                    <ul id="hsArray"></ul>
+                    <!-- <hr id = "win"/> -->
+                    <div>
+                        <button type="button" id="goBack">Back</button>
+                        <button type="button" id="resetScores">clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--JavaScript Links-->
+    <script src="script.js"></script>
+
+    <!--BootStrap JS, Popper.js & jQuery LInks-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
